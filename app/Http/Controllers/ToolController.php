@@ -17,7 +17,7 @@ class ToolController extends Controller
     public function index()
     {
         //
-        $tools = Tool::all();
+        $tools = Tool::orderByDesc('id')->paginate(1);
         return view("admin.tools.index", compact("tools"));
     }
 

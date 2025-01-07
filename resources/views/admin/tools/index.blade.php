@@ -43,6 +43,7 @@
                 <p>No data found</p>
                 @endforelse
 
+                {{ $tools->links() }}
             </div>
         </div>
     </div>
